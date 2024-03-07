@@ -9,6 +9,14 @@
     color: var(--text-color) !important;
 }
 
+#projects .card-title {
+    color: var(--text-color) !important;
+}
+
+#projects .card-text {
+    color: var(--text-color) !important;
+}
+
 #projects .badge {
     background-color: var(--background-color) !important;
     color: var(--text-color) !important;
