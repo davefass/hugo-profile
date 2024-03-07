@@ -53,14 +53,6 @@
     transition: transform 0.3s;
 }
 
-#projects .card-title {
-    color: var(--text-color) !important;
-}
-
-#projects .card-text {
-    color: var(--text-color) !important;
-}
-
 #projects .float-end .btn {
     transition: none;
     border-radius: .5rem !important;
