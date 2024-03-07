@@ -30,7 +30,7 @@
     transform: translateY(-7px);
 }
 
-#projects .card .card-head {
+#projects .card .card-header {
     -o-object-fit: cover;
     object-fit: cover;
     overflow: hidden;
