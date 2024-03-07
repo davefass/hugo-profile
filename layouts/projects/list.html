@@ -17,7 +17,7 @@
         {{ range .Paginator.Pages }}
         <div class="col-lg-4 col-md-6 my-3">
             <div class="card my-3 h-100" title="{{ .Title }}">
-                <div class="card-head">
+                <div class="card-header">
                     <img class="card-img-top" src="{{ .Params.image }}" alt="{{ .Title }}">
                 </div>
                 <div class="card-body bg-transparent p-3">
@@ -26,7 +26,7 @@
                         <span class="badge badge-secondary">{{ . }}</span>
                         {{ end }}
                     </div>
-                    <h5 class="card-title bg-transparent">{{ .Title | truncate 50 }}</h5>
+                    <h4 class="card-title bg-transparent">{{ .Title | truncate 50 }}</h4>
                     <div class="card-text bg-transparent secondary-font">
                         {{ .Summary | truncate 100 | safeHTML }}
                     </div>
