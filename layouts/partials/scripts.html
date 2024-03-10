@@ -87,7 +87,15 @@
 
 {{ if (.Site.Params.contact.formspree.enable | default false) }}
 <script src="{{ .Site.Params.staticPath }}/js/contact.js"></script>
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LfnU5MpAAAAADAIE-Ttibnm7E1Ehd3UKD1OdPqg"></script>
+      <script>
+          grecaptcha.ready(function () {
+              grecaptcha.execute('6LfnU5MpAAAAADAIE-Ttibnm7E1Ehd3UKD1OdPqg', {action: 'submit'}).then(function (token) {
+                  console.info("got token: " + token);
+                  document.getElementById('g-recaptcha-response').value = token;
+              });
+          });
+      </script>
 {{ end }}
 
 {{ if (.Site.Params.customScripts | default false) }}

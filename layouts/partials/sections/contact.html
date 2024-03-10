@@ -17,7 +17,7 @@
                             <div class="mb-3 pt-3">
                                 <textarea class="form-control" name="message" required="true" placeholder='{{ .Site.Params.contact.formspree.messageCaption | emojify | default "Enter your message" }}' rows="3"></textarea>
                             </div>
-                            <div class="g-recaptcha" data-sitekey="6Le9VJMpAAAAACNM4gTHMQV6lvo8zplO-r45pwT0"></div>
+                            <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
                             <div class="mb-3 text-center pt-3">
                                 <button type="submit" class="btn">{{ .Site.Params.contact.btnName | default "Get in Touch" }}</button>
                             </div>
