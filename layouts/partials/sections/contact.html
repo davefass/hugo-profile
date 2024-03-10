@@ -11,6 +11,7 @@
                     {{ if .Site.Params.contact.formspree.enable | default false }}
                     <div class="row justify-content-center">
                         <form id="contact-form" action="https://formspree.io/f/{{ .Site.Params.contact.formspree.formId }}" onsubmit="handleFormspreeSubmit(event)" method="POST" class="col-md-7">
+                            <div class="g-recaptcha" data-sitekey="6Le9VJMpAAAAACNM4gTHMQV6lvo8zplO-r45pwT0"></div>
                             <div class="mb-3 pt-3">
                                 <input type="email" class="form-control"  name="email" required="true" placeholder='{{ .Site.Params.contact.formspree.emailCaption | emojify | default "Enter your email" }}'>
                             </div>
